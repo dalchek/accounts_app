@@ -22,18 +22,18 @@
                                 <td><%= data[i].last_name %></td>
                                 <td><%= data[i].email %></td>
                                 <td><%= data[i].phone %></td>
-                                <th>
+                                <td>
                                     <a
                                         href="/delete_acc/<%= data[i]._id %>"
                                         class="btn btn-sm btn-danger"
                                         >Delete</a
                                     >
-                                </th>
-                                <th>
-                                    <a href="" class="btn btn-sm btn-warning"
+                                </td>
+                                <td>
+                                    <a href="/edit_acc/<%= data[i]._id %>" class="btn btn-sm btn-warning"
                                         >Edit</a
                                     >
-                                </th>
+                                </td>
                             </tr>
 
                             <% } %>
